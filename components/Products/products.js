@@ -1,6 +1,6 @@
 class Products {
     constructor() {
-        this.classNameActive = 'products-element__btn-active';
+        this.classNameActive = "products-element__btn-active";
         this.labelAdd = 'Add to cart';
         this.labelRemove = 'Delet from cart';
     }
@@ -16,7 +16,7 @@ class Products {
             if (productsStore.indexOf(id) === -1) {
                 activeText = this.labelAdd;
             }   else {
-                activeClass = ' ' + this.classNameActive; //спереди добавлен пробел, чтобы машина могла прочитать класс
+                activeClass = ' '+this.classNameActive; //спереди добавлен пробел, чтобы машина могла прочитать класс
                 activeText = this.labelRemove;
             }
 
